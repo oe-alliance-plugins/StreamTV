@@ -1,0 +1,18 @@
+{
+  "branch": "main",
+  "depends_recipe": "",
+  "description_control": "iptv player",
+  "description_recipe": "iptv player",
+  "history_source_dir": "StreamTV",
+  "internal_package_name": "enigma2-plugin-extensions-streamtv",
+  "module_dir_name": "StreamTV",
+  "output_subdir": "StreamTV",
+  "package_name": "enigma2-plugin-extensions-streamtv",
+  "plugin_src_rel": "StreamTV",
+  "python_package": "StreamTV",
+  "rdepends_recipe": "rtmpdump",
+  "replaces": "",
+  "repo_name": "StreamTV",
+  "rrecommends": "",
+  "rreplaces": ""
+}

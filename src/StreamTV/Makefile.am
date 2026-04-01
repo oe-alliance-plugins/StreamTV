@@ -1,1 +1,0 @@
-SUBDIRS = icons meta src po
