@@ -207,7 +207,7 @@ class StreamURIParser:
 
 
 def streamListEntry(entry):
-	#print entry
+	# print entry
 	uriInfo = entry[1].get('uri')
 	return [entry,
 		(eListboxPythonMultiContent.TYPE_PIXMAP_ALPHATEST, 5, 1, 35, 35, loadPNG('%s/icons/%s' % (PLUGIN_PATH, str(entry[1].get('icon'))))),
@@ -320,8 +320,8 @@ class StreamTVList(Screen):
 		if url is None:
 			url = '/tmp/stream.avi'
 			self.streamPlayerTimer.stop()
-			#if os.path.exists(url):
-			#	os.unlink(url)
+			# if os.path.exists(url):
+			# os.unlink(url)
 		try:
 			serviceType = int(serviceType)
 		except:
@@ -332,8 +332,8 @@ class StreamTVList(Screen):
 			bufferSize = None
 
 		service = eServiceReference(serviceType, 0, url)
-		#if bufferSize is not None:
-		#	service.setData(2, bufferSize*1024)
+		# if bufferSize is not None:
+		# service.setData(2, bufferSize*1024)
 
 		streamInfo = self["streamlist"].getCurrent()[0][1]
 		uriInfo = streamInfo.get('uri')
