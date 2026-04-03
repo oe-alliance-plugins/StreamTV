@@ -324,11 +324,11 @@ class StreamTVList(Screen):
 			# os.unlink(url)
 		try:
 			serviceType = int(serviceType)
-		except:
+		except Exception:
 			serviceType = 4097
 		try:
 			bufferSize = int(bufferSize)
-		except:
+		except Exception:
 			bufferSize = None
 
 		service = eServiceReference(serviceType, 0, url)
@@ -388,7 +388,7 @@ class StreamTVList(Screen):
 				d = uriInfo.get(key)
 				if d is not None:
 					return "-%s %s " % (option, d)
-			except:
+			except Exception:
 				pass
 			return ''
 		command = '%s -v ' % (self.streamBin)
