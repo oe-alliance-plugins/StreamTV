@@ -44,7 +44,8 @@ class StreamTVPlayer(Screen, InfoBarNotifications):
 		Screen.__init__(self, session)
 		InfoBarNotifications.__init__(self)
 
-		isEmpty = lambda x: x is None or len(x) == 0 or x == 'None'
+		def isEmpty(x):
+			return x is None or len(x) == 0 or x == 'None'
 		if isEmpty(chName):
 			chName = 'Unknown'
 		if isEmpty(chURL):
