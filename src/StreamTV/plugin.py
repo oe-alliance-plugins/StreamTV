@@ -44,13 +44,13 @@ class StreamTVPlayer(Screen, InfoBarNotifications):
 		Screen.__init__(self, session)
 		InfoBarNotifications.__init__(self)
 
-		def isEmpty(x):
+		def is_empty(x):
 			return x is None or len(x) == 0 or x == 'None'
-		if isEmpty(chName):
+		if is_empty(chName):
 			chName = 'Unknown'
-		if isEmpty(chURL):
+		if is_empty(chURL):
 			chURL = 'Unknown'
-		if isEmpty(chIcon):
+		if is_empty(chIcon):
 			chIcon = 'default.png'
 		chIcon = '%s/icons/%s' % (PLUGIN_PATH, chIcon)
 		self.session = session
